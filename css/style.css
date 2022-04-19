@@ -9,6 +9,7 @@ html{
 }
 /* el selector html y body, hacen que 1 rem sean 10 pixeles */
 /* box-sizing ayuda a que padding no se sume al tamaño de px */
+
 .contenedor{
     max-width: 120rem;
     margin: 0 auto;
@@ -53,6 +54,7 @@ footer{
     justify-content: space-evenly;
     background-color:  #22333B;
     font-size: 2.5rem;
+    padding: 2rem;
 }
 
 .navBar a{
@@ -61,11 +63,41 @@ footer{
 
 .navBar a:hover{
     transition: 0.3s;
-    color: #DDE6E8
+    opacity: 0.5;
+}
+
+/* profesor */
+
+.profesor{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+}
+
+/* beneficios */
+
+.beneficios{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+}
+
+/* Servicios */
+
+.servicios{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 }
 
 /* footer */
 .contacto{
+    padding: 2rem;
     display: flex;
     justify-content: center;
+    gap: 3rem;
+}
+
+.contacto a:hover{
+    transition: 0.3s;
+    opacity: 0.5;
 }
