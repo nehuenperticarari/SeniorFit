@@ -1,0 +1,65 @@
+/* globales */
+html{
+    font-weight: 300;
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+/* el selector html y body, hacen que 1 rem sean 10 pixeles */
+/* box-sizing ayuda a que padding no se sume al tamaño de px */
+.contenedor{
+    max-width: 120rem;
+    margin: 0 auto;
+}
+h1{
+    font-size: 4rem;
+ }
+h2{
+    font-size: 3.2rem;
+}
+h3{
+    font-size: 2.5rem;
+}
+a{
+    text-decoration: none;
+}
+
+p{
+    font-size: 2rem ;
+}
+li{
+    font-size: 2rem ;
+}
+
+body{
+    background-color: #F3F6F7;
+}
+
+footer{
+    background-color: #22333B;
+}
+
+.profe{
+    font-size: 1.8rem;
+}
+
+/* navbar */
+
+.navBar{
+    display: flex;
+    gap: 2rem;
+    justify-content: space-evenly;
+    background-color:  #22333B;
+    font-size: 2.5rem;
+}
+
+.navBar a{
+    color:   #F3F6F7
+}
+
+.navBar a:hover{
+    transition: 0.3s;
+    color: #DDE6E8
+}
