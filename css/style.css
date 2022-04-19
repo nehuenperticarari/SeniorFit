@@ -63,3 +63,9 @@ footer{
     transition: 0.3s;
     color: #DDE6E8
 }
+
+/* footer */
+.contacto{
+    display: flex;
+    justify-content: center;
+}
