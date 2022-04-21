@@ -1,0 +1,28 @@
+@font-face {
+    font-family: "Tofino-Thin";
+    src: url(../fonts/Tofino-ThinPersonal.otf) format("OpenType");
+}
+@font-face {
+    font-family: "Tofino-Light";
+    src: url(../fonts/Tofino-LightPersonal.otf) format("OpenType");
+}
+@font-face {
+    font-family: "Tofino-Regular";
+    src: url(../fonts/Tofino-RegularPersonal.otf) format("OpenType");
+}
+@font-face {
+    font-family: "Tofino-Medium";
+    src: url(../fonts/Tofino-MediumPersonal.otf) format("OpenType");
+}
+@font-face {
+    font-family: "Tofino-Semibold";
+    src: url(../fonts/Tofino-SemiboldPersonal.otf) format("OpenType");
+}
+@font-face {
+    font-family: "Tofino-Bold";
+    src: url(../fonts/Tofino-BoldPersonal.otf) format("OpenType");
+}
+@font-face {
+    font-family: "Tofino-Black";
+    src: url(../fonts/Tofino-BlackPersonal.otf) format("OpenType");
+}
