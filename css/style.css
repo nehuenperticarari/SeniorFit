@@ -3,10 +3,12 @@ html{
     font-weight: 300;
     box-sizing: border-box;
     font-size: 62.5%;
-    font-family: 'Tofino-Regular';
 }
 *, *:before, *:after {
   box-sizing: inherit;
+}
+body {
+    font-family: 'Tofino-Regular';
 }
 /* el selector html y body, hacen que 1 rem sean 10 pixeles */
 /* box-sizing ayuda a que padding no se sume al tamaño de px */
@@ -47,25 +49,54 @@ footer{
     font-size: 1.8rem;
 }
 
+/* clase para delimitar ancho del contenido responsive */
+.margen-main {
+    text-align: center;
+    margin: 0 auto;
+}
+@media only screen and (max-width: 700px) {
+    .margen-main {
+        width: 90vw;
+    }
+}
+@media only screen and (min-width: 701px) and (max-width: 900px) {
+    .margen-main {
+        width: 650px;
+    }
+}
+@media only screen and (min-width: 901px) and (max-width: 1100px) {
+    .margen-main {
+        width: 700px;
+    }
+}
+@media only screen and (min-width: 1101px) and (max-width: 1400px) {
+    .margen-main {
+        width: 900px;
+    }
+}
+@media only screen and (min-width: 1401px) {
+    .margen-main {
+        width: 1100px;
+    }
+}
+
 /* navbar */
 
-.navBar{
-    display: flex;
-    gap: 2rem;
-    justify-content: space-evenly;
+.navbar{
     background-color:  #22333B;
     font-size: 2.5rem;
     padding: 2rem;
 }
-
-.navBar a{
-    color:   #F3F6F7
+.nav-link{
+    color: #C7EDE8 !important;
 }
-
-.navBar a:hover{
-    text-decoration: underline #1693A5 0.2rem;
+.navbar a:hover{
+    color: #45B5C4 !important;
+    text-decoration: underline #45B5C4 0.2rem;
     transition: 0.3s;
-    opacity: 0.5;
+}
+.navbar-toggler{
+    background-color: #1693A5;
 }
 
 /* bienvenida */
