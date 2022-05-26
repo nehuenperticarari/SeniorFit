@@ -85,7 +85,8 @@ footer{
 .navbar{
     background-color:  #22333B;
     font-size: 2.5rem;
-    padding: 2rem;
+    padding: 1rem;
+    height: 90px;
 }
 .nav-link{
     color: #C7EDE8 !important;
@@ -100,15 +101,33 @@ footer{
 }
 
 .logo__nav{
-    width: 10rem;
+    height: min(70px , 10vh);
 }
 
 
 .logo__nav:hover{
     transition: 0.3s;
-   opacity: 0.5;
+    opacity: 0.5;
 }
 
+/* carousel */
+
+#slide1{
+    background-image: url("../img/home1.jpg");
+}
+#slide2{
+    background-image: url("../img/home2.jpg");
+}
+#slide3{
+    background-image: url("../img/home3.jpg");
+}
+
+.carousel-item {
+    height: calc(100vh - 90px);
+    max-height: 80vw;
+    background-size: cover;
+    background-position: center;
+}
 
 /* bienvenida */
 
