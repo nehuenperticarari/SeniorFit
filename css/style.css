@@ -9,6 +9,9 @@ html{
 }
 body {
     font-family: 'Tofino-Regular';
+    color: #22333B;
+    background: rgb(126,206,202);
+    background: linear-gradient(90deg, rgba(126,206,202,0.7) 0%, rgba(199,237,232,1) 40%,  rgba(199,237,232,1) 60%, rgba(126,206,202,0.7) 100%);
 }
 /* el selector html y body, hacen que 1 rem sean 10 pixeles */
 /* box-sizing ayuda a que padding no se sume al tamaño de px */
@@ -139,23 +142,21 @@ footer{
 
 .bienvenida{
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1.2fr 0.8fr;
     gap: 2rem;
     padding: 5vh 0;
 }
 .bienvenida div{
     margin: auto;
-    padding: 0 7%;
+    padding: 0 min(7% , 20px);
 }
 .bienvenida img{  
     height: 25rem;
     margin: auto;
-    padding: 0 7%;
+    padding: 0 min(7% , 20px);
 }
 @media only screen and (min-width: 701px) {
     .bienvenida{
-        grid-template-columns: 1.2fr 0.8fr;
+        grid-template-columns: 1.4fr 0.6fr;
         grid-template-rows: 1fr;
     }
 }
