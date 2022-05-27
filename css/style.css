@@ -139,28 +139,26 @@ footer{
 
 .bienvenida{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    justify-content: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1.2fr 0.8fr;
     gap: 2rem;
-    
+    padding: 5vh 0;
 }
-
-.bienvenida1{
-    grid-column: 1/1;
+.bienvenida div{
+    margin: auto;
+    padding: 0 7%;
 }
-.bienvenida2{
-    grid-column: 1/2;
+.bienvenida img{  
+    height: 25rem;
+    margin: auto;
+    padding: 0 7%;
 }
-.bienvenida3{
-    grid-column: 1/2;
+@media only screen and (min-width: 701px) {
+    .bienvenida{
+        grid-template-columns: 1.2fr 0.8fr;
+        grid-template-rows: 1fr;
+    }
 }
-
-.bienvenida img{
-   
-    width: 15rem; 
-}
-
 
 /* profesor */
 
