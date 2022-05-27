@@ -17,7 +17,6 @@ body {
 /* box-sizing ayuda a que padding no se sume al tamaño de px */
 
 .contenedor{
-    max-width: 120rem;
     margin: 0 auto;
 }
 h1{
@@ -84,7 +83,7 @@ footer{
 }
 
 /* navbar */
-#home {
+#espacio-navbar {
     height: 90px;
     width: 50vw;
 }
@@ -119,8 +118,22 @@ footer{
     opacity: 0.5;
 }
 
-/* carousel */
+/* home */
 
+#home {
+    height: max(calc(100vh - 90px),500px);
+}
+.carousel{
+    height: calc(100vh - 90px);
+}
+.carousel-inner{
+    height: 100%;
+}
+.carousel-item {
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
 #slide1{
     background-image: url("../img/home1.jpg");
 }
@@ -130,17 +143,20 @@ footer{
 #slide3{
     background-image: url("../img/home3.jpg");
 }
-
-.carousel-item {
-    height: calc(100vh - 90px);
-    max-height: 80vw;
-    background-size: cover;
-    background-position: center;
-}
-
-/* bienvenida */
-
 .bienvenida{
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    right: 0;
+    left: 0;
+    top: 20vh;
+
+    z-index: 10;
+    background-color: #22333be3;
+    color: #cccfcf;
+    border-radius: 50px;
+    font-family: 'Tofino-Regular';
+    
     display: grid;
     gap: 2rem;
     padding: 5vh 0;
@@ -150,14 +166,22 @@ footer{
     padding: 0 min(7% , 20px);
 }
 .bienvenida img{  
-    height: 25rem;
+    height: 15rem;
     margin: auto;
     padding: 0 min(7% , 20px);
+}
+.bienvenida b{
+    font-family: 'Tofino-black';
+    color: #F3F6F7;
 }
 @media only screen and (min-width: 701px) {
     .bienvenida{
         grid-template-columns: 1.4fr 0.6fr;
         grid-template-rows: 1fr;
+        top: 40vh;
+    }
+    .bienvenida img{  
+        height: 25rem;
     }
 }
 
