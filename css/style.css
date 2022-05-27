@@ -81,12 +81,18 @@ footer{
 }
 
 /* navbar */
-
+#home {
+    height: 90px;
+    width: 50vw;
+}
 .navbar{
     background-color:  #22333B;
     font-size: 2.5rem;
-    padding: 1rem;
+    padding: 1rem 0;
     height: 90px;
+    width: 100vw;
+    position: fixed;
+    z-index: 10;
 }
 .nav-link{
     color: #C7EDE8 !important;
